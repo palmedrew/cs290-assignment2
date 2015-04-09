@@ -11,6 +11,21 @@
  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form
 */
 
+div.inner-content {
+  position:relative;
+  width:75%;
+  background-color:blue;
+  text-align:center;
+  margin: 0 auto;
+}
+
+div.outer-content {
+  position:relative;
+  top:20px;
+  width:75%;
+  background-color:pink;
+}
+
 dt:hover + dd {
   background-color:Purple;
 }
