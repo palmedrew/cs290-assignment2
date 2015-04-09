@@ -1,9 +1,56 @@
+/* Author:  Andrew Palma
+   file:    style.css
+   CS290 Assignment 2
+*/
+
+/* ref for table stuff 
+ https://css-tricks.com/complete-guide-table-element/
+*/
+
 dt:hover + dd {
-  background-color:purple;
+  background-color:Purple;
 }
 
 img {
   float:left;
   height:125px;
   width:100px; 
+}
+
+table {
+  border-collapse:collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+tbody th:first-child {
+  font-weight:normal;
+  font-style:italic;
+}
+
+tbody th:first-child + td {
+  color:red;
+}
+
+tbody th:first-child + td + td +td {
+  color:blue;
+}
+
+tbody tr:nth-child(odd) {
+  background-color:LightGreen;
+}
+
+tbody tr:nth-child(even) {
+  background-color:LightBlue;
+}
+
+tfoot th:first-child + td {
+  color:red;
+}
+
+tfoot th:first-child {
+  font-weight:normal;
+  font-style:italic;
 }
